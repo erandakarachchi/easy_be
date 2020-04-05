@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'easy_res_api.apps.EasyResApiConfig',
     'rest_framework',
     'corsheaders',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
