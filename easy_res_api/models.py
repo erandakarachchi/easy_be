@@ -16,6 +16,9 @@ class Food(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     restaurant = models.ForeignKey(Restaurant,on_delete=models.CASCADE)
     
+    def __str__(self):
+        return self.name # returning the name for the food field. instead of the whole object.
+    
 class Customers(models.Model):
     name = models.CharField(max_length=100,default="Sample customer")
     mobile = PhoneNumberField(null=False,blank=False,unique=True,default="0887867346")
