@@ -55,4 +55,4 @@ def customer_list(request):
         serializer = CustomerSerializer(data,many=True)
         headerInfo = {'Accept': 'application/json' }
         res = JsonResponse(data=serializer.data,safe=False)
-        return res
+        return res  
